@@ -1,0 +1,124 @@
+:root {
+    --blue: #4023e8;
+    --pink: #c64595;
+    --skyblue: #17a5e5;
+    --orange: #f98a0d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 70px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+header .right a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    background-image: url(st-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-size: 100%;
+}
+
+main section div svg {
+    height: 50px;
+    fill: gray;
+}
+
+main section {
+    /*  height: 100vh; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /*  background-color: red; */
+    width: 950px;
+    margin: 0 auto;
+    justify-content: space-between;
+    row-gap: 50px;
+}
+main section .textBox {
+    color: white;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main section .svgBox {
+    background-color: white;
+    border-radius: 100%;
+    height: 85px;
+    padding: 20px;
+}
+main section .box {
+    height: 200px;
+    width: 450px;
+    display: flex;
+    /*  align-items: center; */
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+}
+main section .box1 {
+    background-color: var(--blue);
+}
+main section .box2 {
+    background-color: var(--pink);
+}
+main section .box3 {
+    background-color: var(--skyblue);
+}
+main section .box4 {
+    background-color: var(--orange);
+}
+
+
+@media (max-width: 1200px) {
+    main{
+        background-size: auto;
+    }
+}
+
+@media (max-width: 910px) {
+    main {
+        height: fit-content;
+    }
+
+    main section {
+        justify-content: center;
+        margin: 40px 0px;
+    }
+}
+
+@media (max-width: 490px) {
+    main section .textBox {
+        width: fit-content;
+    }
+    main section .box {
+        width: fit-content;
+        padding: 20px 5px;
+        align-items: center;
+    }
+}
